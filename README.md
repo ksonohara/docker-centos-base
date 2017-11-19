@@ -1,20 +1,16 @@
 # Summary
 
-CentOS 7 base docker container.
+CentOS base docker container.
 
 # Description
 
-Include centos:7 image.
+Include centos base image.
 
 # Changelog
 
-## build-version 2
+## build-version 0
 
-    From change centos:7.3.1611.
-
-## build-version 1
-
-    Add [ yum install curl ]
+    First Commit / centos:7.4.1708
 
 # Usage
 
@@ -36,7 +32,7 @@ Include centos:7 image.
 
 ### Pull docker container
 
-    docker pull sonohara/centos7-base
+    docker pull sonohara/centos-base
 
 ### Start docker container
 
@@ -44,16 +40,20 @@ Include centos:7 image.
 
 ### Entrypoint
 
-    /.docker/config Source First and alway.
+    /.docker/config Source first and alway.
     /.docker/init.sh Run first and alway.
     /.docker/service.sh Run alway.
-    /.docker/setup.sh Run First only.
+    /.docker/setup.sh Run first only.
+
+# ToDo
+
+    Localize setting.
 
 # Other
 
 ## Copyright and license
 
-- Code released under [GNU GENERAL PUBLIC LICENSE Version 3](https://github.com/ksonohara/docker/blob/master/LICENSE)
+- Code released under [GNU GENERAL PUBLIC LICENSE Version 3](https://github.com/ksonohara/docker-centos-base/blob/master/LICENSE)
 
 ## Author
 

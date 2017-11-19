@@ -6,10 +6,10 @@ if [ $DOCKER_DEBUG = 1 ]; then
 fi
 source /.docker/config
 
-/.docker/init.sh
+source /.docker/init.sh
 
 [ -f /.docker/setup ] || {
-  /.docker/setup.sh
+  source /.docker/setup.sh
 }
 
-/.docker/service.sh
+source /.docker/service.sh

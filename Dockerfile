@@ -1,11 +1,11 @@
-FROM centos:7.4.1708
+FROM centos:7.5.1804
 MAINTAINER Expert Software Inc. / https://www.e-software.company
 
-LABEL name="CentOS 7.4.1708 Base Image" \
+LABEL name="CentOS 7.5.1804 Base Image" \
       vendor="ExpertSoftware Inc." \
       license="GPLv3" \
-      build-date="20171119" \
-      build-tag="1.0.0_0" \
+      build-date="20180911" \
+      build-tag="1.7.5_0" \
       build-version="0"
 
 # for Japanease
@@ -23,7 +23,8 @@ RUN yum install -y yum-plugin-priorities wget unzip curl || true
 
 RUN yum update -y || true
 
-RUN yum clean all
+RUN yum autoremove -y || true
+RUN yum clean all || true
 
 RUN mkdir /.docker
 

@@ -10,7 +10,7 @@ Include centos base image.
 
 ## build-version 0
 
-    First Commit / centos:7.4.1708
+    First Commit / centos:7.5.1804
 
 # Usage
 
